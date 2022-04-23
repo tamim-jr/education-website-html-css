@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Website | HtML and CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="header">
+        <div class="container">
+            <img src="images/logo.png" alt="logo" class="logo">
+            <div class="header-text">
+                <h1>The purpose is to <br> teach, Bring learning to peopl</h1>
+                <span class="square"></span>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus nemo quos qui? Mollitia
+                    dolorem vel neque soluta quo repellendus, cupiditate quidem? In impedit voluptatum porro id, ipsa
+                    dolorum recusandae, minima quos nihil reiciendis, quisquam voluptas!</p>
+                <button class="common-btn"> Read More</button>
+                <div class="line">
+                    <span class="line-1"></span> <br>
+                    <span class="line-2"></span> <br>
+                    <span class="line-3"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <nav id="sidenav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Offer</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <img src="images/menu.png" id="menubtn">
+
+    <script>
+        var menubtn = document.getElementById("menubtn");
+        var sidenav = document.getElementById("sidenav");
+
+       sidenav.style.right = "-250px";
+       menubtn.onclick = function(){
+           if(sidenav.style.right =="-250px"){
+               sidenav.style.right = "0";
+           }
+           else{
+               sidenav.style.right = "-250px";
+           }
+       }
+
+    </script>
+</body>
+
+</html>
